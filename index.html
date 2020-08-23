@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Linked CSS file -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    tr {
+      border-bottom: 1px solid #e0e0e0;
+    }
+  </style>
+  <title>Book List</title>
+</head>
+<body class="bg-light">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div id="bookInputWrapper" class="bg-white shadow p-3">
+          <h2 class="text-center">Add Book</h2>
+          <form id="book-form">
+            <div class="form-group">
+              <label for="title"><b>Title</b></label>
+              <input type="text" class="form-control" id="title" placeholder="Enter title">
+            </div>
+            <div class="form-group">
+              <label for="author"><b>Author</b></label>
+              <input type="text" class="form-control" id="author" placeholder="Enter author">
+            </div>
+            <div class="form-group">
+              <label for="isbn"><b>ISBN</b></label>
+              <input type="text" class="form-control" id="isbn" placeholder="Enter isbn">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div id="booklistWrapper" class="bg-white shadow p-3 mt-4">
+          <h2 class="text-center mb-2">Books list</h2>
+          <table class="table table-borderless">
+            <thead>
+              <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">ISBN</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>N2SPARTAN</td>
+                <td>Ahmed Shaikh</td>
+                <td>3445</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Linked JS file -->
+  <script src="js/Jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/appES5.js"></script>
+</body>
+</html>
