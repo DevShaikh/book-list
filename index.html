@@ -16,7 +16,7 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-6 mx-auto">
+      <div class="col-md-7 mx-auto">
         <div id="bookInputWrapper" class="bg-white shadow p-3">
           <h2 class="text-center">Add Book</h2>
           <form id="book-form">
@@ -38,7 +38,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6 mx-auto">
+      <div class="col-md-7 mx-auto">
         <div id="booklistWrapper" class="bg-white shadow p-3 mt-4">
           <h2 class="text-center mb-2">Books list</h2>
           <table class="table table-borderless">
@@ -47,16 +47,13 @@
                 <th scope="col">Title</th>
                 <th scope="col">Author</th>
                 <th scope="col">ISBN</th>
+                <th></th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>N2SPARTAN</td>
-                <td>Ahmed Shaikh</td>
-                <td>3445</td>
-              </tr>
+            <tbody id="book-list">
             </tbody>
           </table>
+          <button id="clear-all" class="btn btn-dark w-100 mt-2">Clear All Books</button>
         </div>
       </div>
     </div>
@@ -65,6 +62,6 @@
 <!-- Linked JS file -->
   <script src="js/Jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/appES5.js"></script>
+  <script src="js/appES6.js"></script>
 </body>
 </html>
