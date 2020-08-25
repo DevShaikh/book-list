@@ -126,8 +126,6 @@ document.getElementById('book-form').addEventListener('submit', (e) => {
   if(title === '' || author === '' || isbn === '') {
     // Error Alert
     ui.alertMessage('Please fill in all fields', 'alert-danger')
-    
-    return false
   } else {
     // Add book to list
     ui.addBookToList(book);
